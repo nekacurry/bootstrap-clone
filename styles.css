@@ -14,8 +14,11 @@ body {
   height: 5px !important;
   border-radius: 100%;
 }
+.carousel {
+  background-color: #fafafa !important;
+}
 
-#asSeen {
+#asSeen, .carousel {
   background-color: #fafafa !important;
 }
 
