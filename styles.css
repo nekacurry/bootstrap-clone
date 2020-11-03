@@ -4,6 +4,10 @@ body {
   color: #545454 !important;
 }
 
+.icons img {
+  height: 25px;
+}
+
 .carousel-inner img {
   max-height: 600px !important;
   object-fit: cover;
@@ -35,6 +39,38 @@ body {
 #loyaltyIMG {
   background-image: url('assets/loyalty.webp');
   height: 470px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#featCard .col {
+  margin-left: 15em;
+}
+
+#featCard {
+  height: 725px;
+}
+
+#featIMG {
+  background-image: url('assets/201.jpeg');
+  height: 725px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#featIMG2 {
+  background-image: url('assets/fj2.jpg');
+  height: 725px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#featIMG3 {
+  background-image: url('assets/fj4.jpg');
+  height: 725px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
