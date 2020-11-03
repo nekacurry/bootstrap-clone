@@ -53,3 +53,14 @@ body {
 .insta {
   color: #FFA2BC;
 }
+
+.card-img-top {
+    width: 100%;
+    height: 19vw;
+    object-fit: cover;
+}
+
+.card-body {
+  height: 6vw;
+  line-height: 0.5;;
+}
