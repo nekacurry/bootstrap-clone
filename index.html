@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>BISOULOVELY Clone</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400&display=swap" rel="stylesheet">
   <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
@@ -18,7 +21,9 @@
         <a href="#">t</a>
       </div>
       <div class="col-4 text-center">
-        <a class="blog-header-logo text-dark" href="#">BISOULOVELY</a>
+        <a href="#">
+          <img class="img-fluid" src="assets/logo.png">
+        </a>
       </div>
       <div class="col-4 d-flex justify-content-end align-items-center">
         <a class="text-muted" href="#" aria-laber="Search">
@@ -30,6 +35,7 @@
       </div>
     </div>
   </header>
+  <hr>
   <!-- NAVBAR -->
   <div class="nav-scroller py-1 mb-2">
     <nav class="nav d-flex justify-content-center">
@@ -53,18 +59,27 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="01.webp" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          <button type="button" class="btn btn-outline-light">View</button>
+        <img src="assets/01.webp" class="d-block w-100 img-fluid" alt="...">
+        <div class="carousel-caption mb-5 d-none d-md-block">
+          <h2>BISOULOVELY</h2>
+          <p>Ethereal Jewelry For The Modern Starchild</p>
+          <button type="button" class="rounded-0 btn btn-outline-light">View Products</button>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="02.jpg" class="d-block w-100" alt="...">
+        <img src="assets/02.jpg" class="d-block w-100 img-fluid" alt="...">
+        <div class="carousel-caption mb-5 d-none d-md-block">
+          <h2>Magical Boxes</h2>
+          <button type="button" class="rounded-0 btn btn-outline-light">View Products</button>
+        </div>
       </div>
       <div class="carousel-item">
-        <img src="03.webp" class="d-block w-100" alt="...">
+        <img src="assets/03.webp" class="d-block w-100 img-fluid" alt="...">
+        <div class="carousel-caption mb-5 d-none d-md-block">
+          <h2>Join Us!</h2>
+          <p>For A Cosmic Treat</p>
+          <button type="button" class="rounded-0 btn btn-outline-light">View</button>
+        </div>
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -78,16 +93,17 @@
   </div>
 
   <!-- AS SEEN IN -->
-  <div class="jumbotron text-center mb-0">
+  <div id="asSeen" class="text-center m-0 p-5">
     <h4>As seen in:</h4>
-    <div class="d-flex justify-content-center">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
+    <p>As seen in VOGUE UK August, September, and October 2020 issues.</p>
+    <div class="d-flex justify-content-around pt-5">
+      <img src="assets/VOGUE.png" alt="">
+      <img src="assets/VanityFair.png" alt="">
+      <img src="assets/ELLE.png" alt="">
+      <img src="assets/bazaar.jpg" alt="">
+      <img src="assets/Tatler.png" alt="">
+      <img src="assets/GQ.png" alt="">
+      <img src="assets/traveler.png" alt="">
     </div>
   </div>
 
@@ -109,24 +125,11 @@
       <div class="carousel-item active">
         <div class="row">
           <div class="col">
-            <img class="img-fluid" src="201.jpeg" alt="First slide">
+            <img class="img-fluid" src="assets/201.jpeg" alt="First slide">
           </div>
 
           <div class="col">
-            <img class="img-fluid" src="202.jpg" alt="">
-          </div>
-
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col">
-            <img class="img-fluid" src="201.jpeg" alt="Second slide">
-          </div>
-
-          <div class="col">
-            <img class="img-fluid" src="202.jpg" alt="">
+            <img class="img-fluid" src="assets/202.jpg" alt="">
           </div>
 
         </div>
@@ -135,11 +138,24 @@
       <div class="carousel-item">
         <div class="row">
           <div class="col">
-            <img class="img-fluid" src="201.jpeg" alt="Third slide">
+            <img class="img-fluid" src="assets/201.jpeg" alt="Second slide">
           </div>
 
           <div class="col">
-            <img class="img-fluid" src="202.jpg" alt="">
+            <img class="img-fluid" src="assets/202.jpg" alt="">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <img class="img-fluid" src="assets/201.jpeg" alt="Third slide">
+          </div>
+
+          <div class="col">
+            <img class="img-fluid" src="assets/202.jpg" alt="">
           </div>
 
         </div>
@@ -168,16 +184,15 @@
     </div>
 
   <!-- CTA -->
-  <div class="row flex-nowrap align-items-center text-center">
-    <div class="col-md-7">
+  <div id="CTA" class="row flex-nowrap align-items-center text-center">
+    <div class="col-md-6">
         <h2>Join Our Loyalty Program</h2>
         <p>Become a Bisou Babe and earn points towards discounts on your next purchase!</p>
     </div>
-    <div class="col-md-4">
+    <div id="loyaltyIMG" class="col-md-6">
       <div class="img-wrapper">
-        <img class="img-responsive" src="202.jpg">
         <div class="img-overlay">
-          <button class="btn btn-md btn-light">Button</button>
+          <button class="btn btn-md btn-light rounded-0 text-muted">CLICK HERE</button>
         </div>
       </div>
     </div>
@@ -185,41 +200,41 @@
 
   <!-- INSTA FEED -->
   <h6 class="text-center m-3">
-    <a href="#">Follow Us on Instagram</a>
+    <a class="insta" href="#">Follow Us on Instagram</a>
   </h6>
   <div>
-    <div class="row no-gutters align-items-start">
-      <div class="col">
-        <img class="img-fluid" src="202.jpg">
+    <div class="row align-items-start">
+      <div class="col pr-0 pl-1">
+        <img class="img-fluid" src="assets/i1.jpg">
       </div>
-      <div class="col">
-        <img class="img-fluid" src="202.jpg">
+      <div class="col pr-0 pl-1">
+        <img class="img-fluid" src="assets/i2.jpg">
       </div>
-      <div class="col">
-        <img class="img-fluid" src="202.jpg">
+      <div class="col pr-0 pl-1">
+        <img class="img-fluid" src="assets/i3.jpg">
       </div>
-      <div class="col">
-        <img class="img-fluid" src="202.jpg">
+      <div class="col pr-0 pl-1">
+        <img class="img-fluid" src="assets/i4.jpg">
       </div>
-      <div class="col">
-        <img class="img-fluid" src="202.jpg">
+      <div class="col pr-1 pl-1">
+        <img class="img-fluid" src="assets/i5.jpg">
       </div>
     </div>
-    <div class="row no-gutters align-items-center">
-      <div class="col">
-        <img class="img-fluid" src="202.jpg">
+    <div class="row align-items-center pt-1">
+      <div class="col pr-0 pl-1">
+        <img class="img-fluid" src="assets/i6.jpg">
       </div>
-      <div class="col">
-        <img class="img-fluid" src="202.jpg">
+      <div class="col pr-0 pl-1">
+        <img class="img-fluid" src="assets/i7.jpg">
       </div>
-      <div class="col">
-        <img class="img-fluid" src="202.jpg">
+      <div class="col pr-0 pl-1">
+        <img class="img-fluid" src="assets/i8.jpg">
       </div>
-      <div class="col">
-        <img class="img-fluid" src="202.jpg">
+      <div class="col pr-0 pl-1">
+        <img class="img-fluid" src="assets/i9.jpg">
       </div>
-      <div class="col">
-        <img class="img-fluid" src="202.jpg">
+      <div class="col pr-1 pl-1">
+        <img class="img-fluid" src="assets/i10.jpg">
       </div>
   </div>
 
@@ -229,33 +244,33 @@
 
       <div class="row">
         <div class="col-sm" >
-          <h6 class="text-muted">ADDITIONAL LINKS </h6>
+          <p>ADDITIONAL LINKS</p>
           <hr>
           <ul class="list-unstyled text-uppercase">
 
-              <li><a href="https://bisoulovely.grin.live/">Bisou Babe Ambassador Program</a></li>
+              <li><a class="text-muted" href="https://bisoulovely.grin.live/">Bisou Babe Ambassador Program</a></li>
 
-              <li><a href="/search">Search</a></li>
+              <li><a class="text-muted" href="/search">Search</a></li>
 
-              <li><a href="/blogs/blogs">Blogs</a></li>
+              <li><a class="text-muted" href="/blogs/blogs">Blogs</a></li>
 
-              <li><a href="https://bisoulovely.com/apps/help-center">FAQ</a></li>
+              <li><a class="text-muted" href="https://bisoulovely.com/apps/help-center">FAQ</a></li>
 
-              <li><a href="/pages/how-to-use-sezzle">What is Sezzle?</a></li>
+              <li><a class="text-muted" href="/pages/how-to-use-sezzle">What is Sezzle?</a></li>
 
-              <li><a href="/policies/refund-policy">Exchanges and Refunds</a></li>
+              <li><a class="text-muted" href="/policies/refund-policy">Exchanges and Refunds</a></li>
 
-              <li><a href="/policies/shipping-policy">Shipping Policy</a></li>
+              <li><a class="text-muted" href="/policies/shipping-policy">Shipping Policy</a></li>
 
-              <li><a href="/pages/covid-19-shipping-update">Covid-19 Shipping</a></li>
+              <li><a class="text-muted" href="/pages/covid-19-shipping-update">Covid-19 Shipping</a></li>
 
-              <li><a href="/pages/contact-us">Contact Us</a></li>
+              <li><a class="text-muted" href="/pages/contact-us">Contact Us</a></li>
 
           </ul>
         </div>
 
           <div class="col-sm" >
-            <h6 class="text-muted">NEWSLETTER</h6>
+            <p>NEWSLETTER</p>
             <hr>
             <div>
               <p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
@@ -271,22 +286,18 @@
 
       </div>
 
-      <div class="grid">
-        <ul class="footer__secondary grid__item inline-list unstyled medium-up--two-thirds">
-            <li class="footer__copyright"><a href="https://bisoulovely.com">&copy; bisoulovely 2020</a></li>
+      <div class="mt-5 pt-5">
+        <ul class="list-unstyled text-uppercase">
+            <li class="d-inline-block pr-3"><a class="text-muted" href="https://bisoulovely.com">&copy; bisoulovely 2020</a></li>
 
-
-          <!-- Remove the following two lines to delete Shopify credit -->
-            <li><a target="_blank" rel="nofollow" href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore">Powered by Shopify</a></li>
-          <!-- stop deleting here :) -->
+            <li class="d-inline-block"><a class="text-muted" href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore">Powered by Shopify</a></li>
 
         </ul>
   </footer>
 
-  <!-- SCRIPT
+  <!-- SCRIPT -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-  -->
 
 </body>
 </html>

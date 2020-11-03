@@ -1,0 +1,52 @@
+body {
+  font-family: 'Mulish' !important;
+  font-weight: 300 !important;
+  color: #545454 !important;
+}
+
+.carousel-inner img {
+  max-height: 600px !important;
+  object-fit: cover;
+}
+
+.carousel-indicators li {
+  width: 5px !important;
+  height: 5px !important;
+  border-radius: 100%;
+}
+
+#asSeen {
+  background-color: #fafafa !important;
+}
+
+#asSeen img {
+    height: 40px;
+}
+
+#CTA {
+  height: 470px;
+  background-color: #e9b1b1;
+  color: #ffffff;
+}
+
+#loyaltyIMG {
+  background-image: url('assets/loyalty.webp');
+  height: 470px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-overlay .btn {
+  position: absolute;
+  padding: 1em 2em;
+  font-size: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.insta {
+  color: #FFA2BC;
+}
